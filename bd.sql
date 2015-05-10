@@ -26,7 +26,7 @@ CREATE TABLE forums (
     short_name CHAR(40) UNIQUE,
     userId int NOT NULL,
     PRIMARY KEY(id),
-    FOREIGN KEY (userId) REFERENCES Users(id)
+    FOREIGN KEY (userId) REFERENCES users(id)
 );
 
 CREATE TABLE follows (
@@ -34,8 +34,8 @@ CREATE TABLE follows (
     id1 int,
     id2 int,
     PRIMARY KEY(id),
-    FOREIGN KEY (id1) REFERENCES Users(id),
-    FOREIGN KEY (id2) REFERENCES Users(id),
+    FOREIGN KEY (id1) REFERENCES users(id),
+    FOREIGN KEY (id2) REFERENCES users(id),
     UNIQUE (id1, id2)
 );
 

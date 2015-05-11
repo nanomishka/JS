@@ -1,6 +1,5 @@
+CREATE DATABASE  test CHARACTER SET utf8 COLLATE utf8_general_ci;
 use test;
-
-
 DROP TABLE IF EXISTS postlikes;
 DROP TABLE IF EXISTS threadlikes;
 DROP TABLE IF EXISTS posts;

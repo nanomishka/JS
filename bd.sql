@@ -17,7 +17,7 @@ CREATE TABLE users (
     id int NOT NULL AUTO_INCREMENT,
     username CHAR(30),
     about TEXT,
-    name CHAR(20),
+    name CHAR(80),
     email CHAR(30) NOT NULL UNIQUE,
     isAnonymous BOOLEAN,
     PRIMARY KEY(id)
